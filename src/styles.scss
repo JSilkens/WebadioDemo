@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import "scss/colors";
+@import "scss/buttons";
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display');
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome';
+body{
+  background-color: $gray-100;
+}
+h1{
+  font-family: 'Permanent Marker', cursive;
+}
+
+#nav{
+  background-color: $gray-900;
+}
+#nav #title{
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+}
+#nav #white{
+  background-color: white;
+}
+#nav #black {
+  color: white;
+  //border: solid white;
+}
+
+
