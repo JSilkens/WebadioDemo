@@ -1,7 +1,7 @@
 import {DetailLink} from './DetailLink';
 import {ImageUrlsLink} from './ImageUrlsLinks';
-import {Thirdpartylinks} from './Thirdpartylinks';
 import {ChannelStreamingUrlsLink} from './ChannelStreamingUrlsLink';
+import {Thirdpartylinks} from './Thirdpartylinks';
 
 export class Channel {
   code: string;
@@ -18,4 +18,5 @@ export class Channel {
   imageUrlsLink: ImageUrlsLink;
   thirdpartylinks: Thirdpartylinks;
   detailLink: DetailLink;
+  channels: Channel[];
 }
