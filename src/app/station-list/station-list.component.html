@@ -3,15 +3,13 @@
 
 <br>
 <!--station cards overview-->
+<div *ngIf="channels">
+  found stations {{channels.length}}
+</div>
 <div class="row">
-  <div class="col">
-    <app-station-item></app-station-item>
+  <div class="col" *ngFor="let channelItem of channels">
+    <app-station-item [channel]="channelItem"></app-station-item>
   </div>
-  <div class="col">
-    <app-station-item></app-station-item>
-  </div>
-  <div class="col">
-    <app-station-item></app-station-item>
-  </div>
+
 </div>
 

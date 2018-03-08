@@ -1,13 +1,15 @@
 <div class="card" style="width: 20rem;">
   <div class="card-block">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Lorem ipsum shizzle</p>
+    <h4 class="card-title text-center">{{channel.displayName}}</h4>
+    <a href="{{channel.websiteURL}}"><img src="{{channel.logoUrl}}" alt="{{channel.name}}"  class="cardlogo"></a>
+    <p class="card-text">{{channel.description}}</p>
+    <p class="card-text"><a href="{{channel.websiteURL}}">Go to website</a></p>
     <div class="row">
       <div class="col-sm">
-        <i class="fa fa-plus fa-2x"></i>
+        <a href="#"><i class="fa fa-plus fa-2x"></i></a>
       </div>
       <div class="col-sm text-right">
-        <i class="fa fa-play-circle fa-2x"></i>
+        <a href="#" class=""><i class="fa fa-play-circle fa-2x fa-link"></i></a>
       </div>
     </div>
 

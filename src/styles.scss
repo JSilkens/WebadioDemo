@@ -11,7 +11,13 @@ body{
 h1{
   font-family: 'Permanent Marker', cursive;
 }
-
+h4{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+a .fa {
+  color: black;
+}
 #nav{
   background-color: $gray-900;
 }
@@ -26,5 +32,6 @@ h1{
   color: white;
   //border: solid white;
 }
+
 
 
