@@ -1,5 +1,5 @@
-<div class="card" style="width: 20rem;">
-  <div class="card-block">
+<div class="card" style="width: 20rem;" >
+  <div class="card-block" [id]="'card' +channel.code">
     <h4 class="card-title text-center">{{channel.displayName}}</h4>
     <a href="{{channel.websiteURL}}"><img src="{{channel.logoUrl}}" alt="{{channel.name}}"  class="cardlogo"></a>
     <p class="card-text">{{channel.description}}</p>
@@ -9,7 +9,7 @@
         <a href="#"><i class="fa fa-plus fa-2x"></i></a>
       </div>
       <div class="col-sm text-right">
-        <a href="#" class=""><i class="fa fa-play-circle fa-2x fa-link"></i></a>
+        <a href="#" class="" (click)="selectChannel()"><i class="fa fa-play-circle fa-2x fa-link"></i></a>
       </div>
     </div>
 

@@ -1,6 +1,19 @@
+@import "../../scss/colors";
+.card{
+  margin: 0.8em;
+  padding: 0.5em;
+}
 .cardlogo{
   height: 100px;
 }
 .card-text{
   margin-left: 5px;
 }
+
+.card:hover {
+  background:  $gray-200;
+}
+.card .selected {
+  background: $selected;
+}
+

@@ -27,4 +27,7 @@ export class StationListComponent implements OnInit {
       .subscribe(channels => this.channels = channels.channels);
   }
 
+  onChannelPlayClicked(channel: Channel) {
+    console.log(channel.name);
+  }
 }

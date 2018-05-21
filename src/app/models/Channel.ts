@@ -2,6 +2,7 @@ import {DetailLink} from './DetailLink';
 import {ImageUrlsLink} from './ImageUrlsLinks';
 import {ChannelStreamingUrlsLink} from './ChannelStreamingUrlsLink';
 import {Thirdpartylinks} from './Thirdpartylinks';
+import {Stream} from './Stream';
 
 export class Channel {
   code: string;
@@ -19,4 +20,6 @@ export class Channel {
   thirdpartylinks: Thirdpartylinks;
   detailLink: DetailLink;
   channels: Channel[];
+  selected: boolean;
+  streams: Stream[];
 }

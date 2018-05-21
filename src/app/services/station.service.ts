@@ -12,7 +12,7 @@ const httpOptions = {headers: new HttpHeaders({'Accept':  'application/vnd.chann
 
 @Injectable()
 export class StationService {
-  private apiUrl = 'http://services.vrt.be/channel' + '/s?type=radio&state=active';
+  private apiUrl = 'https://services.vrt.be/channel' + '/s?type=radio&state=active';
   constructor(
     private streamService: StreamService,
     private http: HttpClient

@@ -8,7 +8,13 @@ import {HttpClientModule} from '@angular/common/http';
 import {StationService} from './services/station.service';
 import {StreamService} from './services/stream.service';
 import { PlayerComponent } from './player/player.component';
+import { App, NavController } from 'ionic-angular';
+import { IonicAudioModule, WebAudioProvider, CordovaMediaProvider, defaultAudioProviderFactory } from 'ionic-audio';
+import {PlayerService} from './services/player.service';
 
+export function myCustomAudioProviderFactory() {
+  return (window.hasOwnProperty('cordova')) ? new CordovaMediaProvider() : new WebAudioProvider();
+}
 
 @NgModule({
   declarations: [
@@ -20,9 +26,10 @@ import { PlayerComponent } from './player/player.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    IonicAudioModule.forRoot(defaultAudioProviderFactory),
   ],
-  providers: [StationService, StreamService],
+  providers: [StationService, StreamService , PlayerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
